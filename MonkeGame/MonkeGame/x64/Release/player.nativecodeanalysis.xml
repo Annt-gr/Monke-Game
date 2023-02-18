@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+      <FILENAME>player.cpp</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'activeBullets'.</DESCRIPTION>
+    <FUNCTION>Player::updateBullets</FUNCTION>
+    <DECORATED>?updateBullets@Player@@QEAAXXZ</DECORATED>
+    <FUNCLINE>79</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+        <FILENAME>player.cpp</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'activeBullets' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+        <FILENAME>player.cpp</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+        <FILENAME>player.cpp</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this loop, (assume 'i&lt;bullets.size()' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+        <FILENAME>player.cpp</FILENAME>
+        <LINE>90</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+        <FILENAME>player.cpp</FILENAME>
+        <LINE>90</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&gt;=0')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+        <FILENAME>player.cpp</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Ant.Det.01\Desktop\MonkeGame\MonkeGame\MonkeGame\</FILEPATH>
+        <FILENAME>player.cpp</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'activeBullets' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
